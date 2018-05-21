@@ -148,7 +148,14 @@ public:
     void cut_parent();
     void contract_SPRNode();
     SPRNode *parent();
-    inline SPRNode *lchild();
+    inline SPRNode *lchild()
+    {
+        if (children.empty())
+            return NULL;
+        else
+            return children.front();
+    }
+
     SPRNode *rchild();
     SPRNode *get_twin();
     int get_SPR_depth();

@@ -891,14 +891,6 @@ SPRNode *SPRNode::parent()
     return p;
 }
 
-inline SPRNode *SPRNode::lchild()
-{
-    if (children.empty())
-        return NULL;
-    else
-        return children.front();
-}
-
 SPRNode *SPRNode::rchild()
 {
     if (children.empty())

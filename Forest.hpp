@@ -50,7 +50,10 @@ public:
     void add_deleted_node(SPRNode *n);
     SPRNode *get_component(int i);
     void set_component(int i, SPRNode *head);
-    inline size_t num_components();
+    inline size_t num_components()
+    {
+        return components.size();
+    }
     void set_twin(Forest *f);
     Forest *get_twin();
     ClusterInstance *get_cluster();

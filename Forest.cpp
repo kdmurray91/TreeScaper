@@ -215,10 +215,6 @@ void Forest::set_component(int i, SPRNode *head)
     components[i] = head;
 }
 
-inline size_t Forest::num_components()
-{
-    return components.size();
-}
 
 void Forest::set_twin(Forest *f)
 {
