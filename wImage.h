@@ -60,8 +60,8 @@
 
 //#include "vtkMPEG2Writer.h"
 #include <vtkWindowToImageFilter.h>
-#include <vtkAVIWriter.h>
-//#include <vtkFFMPEGWriter.h>
+//#include <vtkAVIWriter.h>
+#include <vtkFFMPEGWriter.h>
 #include <vtkCamera.h>
 #include <vtkWindow.h>
 #include "vtkImageCast.h"
