@@ -781,8 +781,8 @@ bool Matrix<T>::compute_inverse_matrix(Matrix<T> &inverse_matrix)
 {
 	assert(row == col);
 	inverse_matrix.resize(row, col);
-	real *V = new real[row * col];
-	real *Vn = new real[row * col];
+	ts_real *V = new ts_real[row * col];
+	ts_real *Vn = new ts_real[row * col];
 	integer *ipiv = new integer[row * col];
 	integer M = row;
 	integer lda = row;

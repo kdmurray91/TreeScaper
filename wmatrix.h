@@ -32,14 +32,16 @@
 
 extern "C"
 {
+#ifdef TS_CMAKE_LAPACK
+#include <cblas.h>
+#include <lapacke.h>
+typedef int integer;
+typedef float ts_real;
+#else
 #include "f2c.h"
-//#ifndef _WIN32
 #include "clapack.h"
-//#else
-//#include <dgesvd.h>
-//#include <sgetrf.h>
-//#include <sgetri.h>
-//#endif
+typedef real ts_real;
+#endif
 }
 #undef abs
 
